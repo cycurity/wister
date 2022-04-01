@@ -58,7 +58,7 @@ $ cd wister
 
 ## MANUAL
 
-&nbsp;&nbsp;&nbsp;&nbsp;To run the program, you need to pass at least a set of words, using an input file (`-i` or `--input`), or passing the words manually using the `-w` or `--words` tags. If no more options are passed, the program will just write the specified words to the default output file `output.lst`.
+&nbsp;&nbsp;&nbsp;&nbsp;To run the program, you need to pass at least a set of words, using an input file (`-i` or `--input`), or passing the words manually using the `-w` or `--words` tag. If no more options are passed, the program will just write the specified words to the default output file `output.lst`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;There are 5 types of combinations that can be used (with `-c` or `--combination`) simultaneously : `1. Word Mix`; `2. Case Alternate`; `3. Homograph`; `4. Reverser`; `5. Saltify`. To get more information about each type of combination, you should use the *list* argument (`-l` or `--list`). When using the first combination (Word Mix), you can also select the depth (`-d` / `--depth`) which will define the number of words being mixed together. By default, this value is set to 3. 
 
@@ -72,7 +72,7 @@ $ cd wister
 
 &nbsp;&nbsp;&nbsp;&nbsp;By default, the progress bar is enabled when verbose mode is not. You can also choose to disable it by using the `-N` or `--noprogress` flag. Disabling this feature will increase performance and decrease the overall execution time of the program.
 
-&nbsp;&nbsp;&nbsp;&nbsp;To print the current program version, use the `-v` or `--version`.
+&nbsp;&nbsp;&nbsp;&nbsp;To print the current program version, use `-v` or `--version`.
 
 &nbsp;&nbsp;&nbsp;&nbsp;To get the usage and help page, use the `-h` flag or `--help`.
 
