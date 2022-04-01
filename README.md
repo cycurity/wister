@@ -17,7 +17,7 @@
 
 ## USAGE
 
-![](./static/img/running.gif "Usage")
+![](running.gif "Usage")
 
 ```
 usage: wister.py [-h] [-c [1-5] [[1-5] ...]] [-d [2-5]] [-e FORMAT] [-i FILE] [-l] [-m [0-49]] [-M [1,50]] [-o FILE] [-N] [-v] [-V] [-w WORDS [WORDS ...]]
