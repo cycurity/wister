@@ -13,7 +13,7 @@
 
 ## SUMMARY
 
-> A unique wordlist generator with several types of combinations to choose from, or to mix them all. Capable of receiving words from various sources and outputing them to different encoding types.
+> A wordlist generator tool, that allows you to supply a set of words, giving you the possibility to craft multiple variations from the given words, creating a unique and ideal wordlist to use regarding a specific target.
 
 ## USAGE
 
