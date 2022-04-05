@@ -1,7 +1,7 @@
 import control
 import utils
 
-__version__ = 1.0
+__version__ = 1.0.1
 
 def main():
     argv = utils.args(__version__)
