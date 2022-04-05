@@ -86,6 +86,7 @@ def wordfile (file):
     for word in file:
         word = word.strip()
         words.append(word)
+    file.close()
     return words
 
 def output (file, words: list, v):
@@ -93,7 +94,9 @@ def output (file, words: list, v):
         print("Saving to '" + file.name + "'...")
     for i in words:
         file.write(i + "\n")
-    return
+    bts = file.tell()
+    file.close()
+    return bts
 
 def encode(final, encoding):
     newfinal = []
@@ -125,3 +128,14 @@ def encode(final, encoding):
         for w in final:
             newfinal.append(hashlib.sha3_256(w.encode()).hexdigest())
     return newfinal
+
+def convert(b):
+    b = int(b)
+    if (b > 1000000000):
+        return f"{b / 1000000000:.2f} Gb"
+    elif (b > 1000000):
+        return f"{b / 1000000:.2f} Mb"
+    elif (b > 1000):
+        return f"{b / 1000:.2f} Kb"
+    else:
+        return f"{b:.2f} B"

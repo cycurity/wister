@@ -67,7 +67,7 @@ def type2 (words, final, v, total, bar):
                 if (len(word) > 2):
                     final.append(str(word[0:1].lower() + word[1:len(word)-1] + word[len(word)-1:len(word)].lower()))
                 final.append(str(word[0:len(word)-1] + word[len(word)-1:len(word)].lower()))
-            elif (not word.isalpha()): 
+            elif (not word.isalpha()):
                 continue
             else:
                 lowercase = word.lower()

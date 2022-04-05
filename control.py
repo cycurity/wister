@@ -92,8 +92,9 @@ def control (argv):
             print("Encoding wordlist...")
         final = utils.encode(final, argv.encode)
     
-    utils.output(argv.output, final, v)
-    print(f"\nGenerated {len(final)} lines.")
+    bts = utils.output(argv.output, final, v)
+    bts = utils.convert(bts)
+    print(f"\nGenerated {len(final)} lines. ({bts})")
 
     stop = time.time()
     elapsed = stop-start
