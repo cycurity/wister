@@ -13,6 +13,9 @@ def type1 (min, max, words, final, v, depth, total, bar):
         if (not v and bar):
             utils.progress((count + total[0]) / total[1])
             count += 1
+        tmp = a + a
+        if (len(tmp) <= max and len(tmp) >= min):
+            final.append(tmp)
         if (len(a) <= max and len(a) >= min):
             for b in words:
                 if (not a == b):
@@ -39,6 +42,7 @@ def type1 (min, max, words, final, v, depth, total, bar):
                                                                         final.append(tmp)
 
     return final
+
 
 # Case Alternate
 def type2 (words, final, v, total, bar):
@@ -85,8 +89,8 @@ def type2 (words, final, v, total, bar):
                     final.append(str(lowercase[0:1].upper() + lowercase[1:len(lowercase)-1] + lowercase[len(lowercase)-1:len(lowercase)].upper()))
                 final.append(str(lowercase[0:len(lowercase)-1] + lowercase[len(lowercase)-1:len(lowercase)].upper()))
                 
-
     return final
+
 
 # Homograph
 def type3 (words, final, v, total, bar):
@@ -121,6 +125,7 @@ def type3 (words, final, v, total, bar):
 
     return final + tmp
 
+
 # Reverser
 def type4 (words, final, v, total, bar):
     if (v):
@@ -135,6 +140,7 @@ def type4 (words, final, v, total, bar):
         final.append(a)
     
     return final
+
 
 # Salt
 def type5 (min, max, words, final, v, depth, total, bar):
@@ -154,7 +160,9 @@ def type5 (min, max, words, final, v, depth, total, bar):
                 final = final + __type5extra(min, max, [w] + [lines_stripped], final)
     finally:
         pass
+
     return final
+
 
 def __type5extra(min, max, words, final):
     tmp = ""
