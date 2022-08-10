@@ -17,7 +17,7 @@
 
 ## USAGE
 
-![](running.gif "Usage")
+![](https://raw.githubusercontent.com/cycurity/wister/main/running.gif "Usage")
 
 ```
 usage: wister.py [-h] [-c [1-5] [[1-5] ...]] [-d [2-5]] [-e FORMAT] [-i FILE] [-l] [-m [0-49]] [-M [1,50]] [-o FILE] [-N] [-v] [-V] [-w WORDS [WORDS ...]]
@@ -29,7 +29,7 @@ options:
   -d [2-5], --depth [2-5]
                         Select the depth of word mixing when using combination mode 1. Default: 3
   -e FORMAT, --encode FORMAT
-                        Encode/Hash the generated wordlist with a given algorithm
+                        Encode/Hash the generated wordlist with a given algorithm: "md5", "base64", "hex", "url", "sha1", "sha256" , "sha512", "sha3-256", "sha3-512"
   -i FILE, --input FILE
                         Select the input file containing the words.
   -l, --list            List the types of combination.
@@ -39,7 +39,7 @@ options:
                         Select maximum characters for output. Default: 20
   -o FILE, --output FILE
                         Specify the output file. Default: output.lst
-  -N, --noprogress      Disables progress bar (increses performance)
+  -N, --noprogress      Disables progress bar (increases performance)
   -v, --version         Returns the version of the program.
   -V, --verbose         Verbose the output.
   -w WORDS [WORDS ...], --words WORDS [WORDS ...]
@@ -48,12 +48,23 @@ options:
 
 ## INSTALLATION
 
-The process to install Wister is as simple as cloning the repository to your local machine:
+The process to install Wister is very simple, just copy the following commands:
 
+PIP module installation:
+
+```bash
+$ sudo apt-get install python3 python3-pip
+$ pip install wister
 ```
+
+Source compilation:
+
+```bash
 $ sudo apt-get install python3 python3-pip git
-$ git clone -q https://github.com/cycurity/wister.git
+$ git clone https://github.com/cycurity/wister.git
 $ cd wister
+$ pip install -r requirements.txt
+$ pip install .
 ```
 
 ## MANUAL
@@ -68,9 +79,9 @@ $ cd wister
 
 &nbsp;&nbsp;&nbsp;&nbsp;The verbose option (`-V` / `--verbose`) will allow you to follow the generation of the wordlist, by printing the several steps of the program. When this option is enabled, the progress bar is disabled.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Optionally, the generated wordlist can be encoded or hashed, using `-e` or `--encode`, with specific types of algorithms: `MD5`; `Base64`; `Hexadecimal`; `URL Encode`; `SHA1`; `SHA2-256`; `SHA2-512`; `SHA3-256`; `SHA3-512`.
+&nbsp;&nbsp;&nbsp;&nbsp;Optionally, the generated wordlist can be encoded or hashed, using `-e` or `--encode`, with specific types of algorithms: `md5`, `base64`, `hex`, `url`, `sha1`, `sha256`, `sha512`, `sha3-256`, `sha3-512`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;By default, the progress bar is enabled when verbose mode is not. You can also choose to disable it by using the `-N` or `--noprogress` flag. Disabling this feature will increase performance and decrease the overall execution time of the program.
+&nbsp;&nbsp;&nbsp;&nbsp;By default, the progress bar is enabled when verbose mode is not. You can also choose to disable it using the `-N` or `--noprogress` flag. Disabling this feature will increase performance, decreasing the overall execution time of the program.
 
 &nbsp;&nbsp;&nbsp;&nbsp;To print the current program version, use `-v` or `--version`.
 
@@ -78,9 +89,14 @@ $ cd wister
 
 ## CREDITS
 
-Development team:
+Developed by:
+
 - [fssecur3](https://github.com/fssecur3 "fssecur3's Github Profile")
 - [intMa1n](https://github.com/Bernardo15Sousa "intMa1n's Github Profile")
+
+Project maintained by:
+
+- [fssecur3](https://github.com/fssecur3 "fssecur3's Github Profile")
 
 ## LICENSE
 
